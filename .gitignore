@@ -5,3 +5,4 @@ tangents/
 *.csv
 !examples/*.csv
 credentials.py
+*.csv
