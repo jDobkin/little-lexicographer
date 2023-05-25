@@ -5,7 +5,7 @@ import re
 import glob
 
 # Read the CSV file
-data = pd.read_csv("C:\\Users\\jdobkin\\Downloads\\tracking_progress_dict2.csv")
+data = pd.read_csv("C:\\Users\\jdobkin\\Documents\\GitHub\\little-lexicographer\\out.csv", encoding='windows-1252')
 
 # Get the unique values in the column that will be used to separate the data
 unique_values = data['resource_id'].unique()
