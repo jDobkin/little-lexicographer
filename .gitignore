@@ -6,3 +6,11 @@ tangents/
 !examples/*.csv
 credentials.py
 *.csv
+test/
+!test/*.csv
+dataDic/
+!dataDic/*.csv
+tp_dicts/
+!tp_dicts/*.csv
+ve/
+!ve/*.py
