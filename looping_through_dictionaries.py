@@ -5,7 +5,7 @@ import re
 import glob
 
 # Read the CSV file
-data = pd.read_csv("C:\\Users\\jdobkin\\Documents\\GitHub\\little-lexicographer\\out.csv", encoding='windows-1252')
+data = pd.read_csv("path\to\csv", encoding='windows-1252')
 
 # Get the unique values in the column that will be used to separate the data
 unique_values = data['resource_id'].unique()
@@ -22,8 +22,8 @@ for value in unique_values:
     # Print the file path of the exported CSV file
     print(f'{os.getcwd()}/{filename} created')
 
-folder_path = "C:\\Users\\jdobkin\\Documents\\GitHub\\little-lexicographer\\tp_dicts"
-script_path = "C:\\Users\\jdobkin\\Documents\\GitHub\\little-lexicographer\\upload_data_dictionary.py"
+folder_path = "path\to\dict\folder"
+script_path = "path\\to\\upload_data_dictionary.py"
 
 csv_files = glob.glob(os.path.join(folder_path, "*.csv"))
 for f in csv_files:
